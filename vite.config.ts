@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : '/adjudicator-view/' : '/',
+  base: mode === 'production' ? '/everworker-dispute-adjudicator/' : '/',
   server: {
     host: "::",
     port: 8080,
